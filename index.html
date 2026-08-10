@@ -8,8 +8,8 @@
 <meta property="og:title" content="Central Garage Otautau | Auto Repairs &amp; WOF">
 <meta property="og:description" content="Auto repairs, WOF, servicing, tyres and engineering in Otautau, Southland. Call the workshop on 03 225 8537.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=70">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%2314161a'/%3E%3Ctext x='50' y='72' font-family='Arial Black,Arial' font-size='62' font-weight='900' text-anchor='middle' fill='%23ff5a1f'%3EC%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="img/p2.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23F6B511'/%3E%3Ctext x='50' y='72' font-family='Arial Black,Arial' font-size='62' font-weight='900' text-anchor='middle' fill='%23C4161C'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,8 @@
   --ink:#14161a; --ink-2:#1b1e24; --ink-3:#23272f;
   --bone:#f4f1ec; --bone-2:#eae5dc; --paper:#ffffff;
   --line:#2c313a;
-  --accent:#ff5a1f; --accent-d:#e0470f;
+  --accent:#C4161C; --accent-d:#9E0E12;
+  --yellow:#F6B511; --yellow-d:#D99A0A;
   --muted:#8b9099; --muted-d:#5b616b;
   --txt:#1c1f24; --txt-soft:#4a4f57;
   --radius:14px; --radius-lg:20px;
@@ -89,9 +90,9 @@ header.nav.solid{background:rgba(18,20,24,.92);backdrop-filter:blur(12px);border
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,rgba(15,16,20,.93) 0%,rgba(15,16,20,.72) 46%,rgba(15,16,20,.42) 100%)}
 .hero-overlay::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,16,20,.85),transparent 42%)}
 .hero-in{position:relative;z-index:2;width:100%;padding-top:96px;padding-bottom:52px}
-.hero-in .eyebrow{color:#ff8452}
+.hero-in .eyebrow{color:var(--yellow)}
 .hero h1{color:#fff;font-size:clamp(56px,11vw,132px);margin:18px 0 0;max-width:15ch;font-weight:700}
-.hero h1 .hl{color:var(--accent)}
+.hero h1 .hl{color:var(--yellow)}
 .hero p.sub{color:#d3d7dd;font-size:clamp(17px,2.1vw,21px);max-width:52ch;margin:22px 0 0;line-height:1.6}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .hero-badge{margin-top:30px;display:inline-flex;align-items:center;gap:14px;background:rgba(255,255,255,.09);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:13px;padding:13px 20px;max-width:100%}
@@ -107,7 +108,7 @@ header.nav.solid{background:rgba(18,20,24,.92);backdrop-filter:blur(12px);border
 .trust{background:var(--ink-2);border-top:1px solid var(--line);color:#e9ebee}
 .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
 .trust-cell{background:var(--ink-2);padding:34px 30px;display:flex;gap:18px;align-items:flex-start}
-.trust-cell .ic{width:46px;height:46px;border-radius:11px;background:rgba(255,90,31,.12);border:1px solid rgba(255,90,31,.3);display:grid;place-items:center;flex:none;color:var(--accent)}
+.trust-cell .ic{width:46px;height:46px;border-radius:11px;background:rgba(196,22,28,.12);border:1px solid rgba(196,22,28,.3);display:grid;place-items:center;flex:none;color:var(--accent)}
 .trust-cell .ic svg{width:23px;height:23px}
 .trust-cell h3{font-size:25px;color:#fff;margin-bottom:3px;letter-spacing:.02em}
 .trust-cell p{font-size:14.5px;color:#a7adb6;line-height:1.5}
@@ -120,7 +121,7 @@ header.nav.solid{background:rgba(18,20,24,.92);backdrop-filter:blur(12px);border
 .svc-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.05);transition:transform .5s ease}
 .svc-card:hover .svc-media img{transform:scale(1.07)}
 .svc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,26,.05),rgba(20,22,26,.42))}
-.svc-num{position:absolute;top:12px;left:14px;z-index:2;font-family:'Teko';font-size:22px;font-weight:600;color:#fff;background:rgba(20,22,26,.55);backdrop-filter:blur(3px);width:38px;height:38px;border-radius:9px;display:grid;place-items:center;letter-spacing:.02em}
+.svc-num{position:absolute;top:12px;left:14px;z-index:2;font-family:"Teko";font-size:22px;font-weight:700;color:#14161a;background:var(--yellow);width:38px;height:38px;border-radius:9px;display:grid;place-items:center;letter-spacing:.02em}
 .svc-body{padding:24px 24px 28px}
 .svc-body h3{font-size:29px;color:var(--ink);margin-bottom:8px;letter-spacing:.02em}
 .svc-body p{font-size:15px;color:var(--txt-soft);line-height:1.55}
@@ -145,7 +146,7 @@ header.nav.solid{background:rgba(18,20,24,.92);backdrop-filter:blur(12px);border
 /* ===== CREW ===== */
 .crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .crew-card{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px 28px;text-align:center;transition:transform .25s,border-color .25s}
-.crew-card:hover{transform:translateY(-5px);border-color:rgba(255,90,31,.4)}
+.crew-card:hover{transform:translateY(-5px);border-color:rgba(196,22,28,.4)}
 .avatar{width:78px;height:78px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;background:var(--ink);border:2px solid var(--accent);font-family:'Teko';font-size:34px;font-weight:600;color:var(--accent);letter-spacing:.03em}
 .crew-card h3{font-size:27px;color:#fff;letter-spacing:.02em}
 .crew-card .role{color:var(--accent);font-family:'Public Sans';font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:4px 0 12px}
@@ -181,7 +182,7 @@ header.nav.solid{background:rgba(18,20,24,.92);backdrop-filter:blur(12px);border
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .info-row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.09)}
 .info-row:first-of-type{padding-top:0}
-.info-row .ic{width:44px;height:44px;border-radius:11px;background:rgba(255,90,31,.13);border:1px solid rgba(255,90,31,.3);display:grid;place-items:center;color:var(--accent);flex:none}
+.info-row .ic{width:44px;height:44px;border-radius:11px;background:rgba(196,22,28,.13);border:1px solid rgba(196,22,28,.3);display:grid;place-items:center;color:var(--accent);flex:none}
 .info-row .ic svg{width:21px;height:21px}
 .info-row .t small{display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8b9099;font-weight:700;margin-bottom:3px}
 .info-row .t b{font-size:18px;color:#fff;font-weight:600;font-family:'Public Sans'}
@@ -264,24 +265,26 @@ footer{background:#0f1114;color:#9aa0a9;padding:64px 0 30px}
   .reveal{transition:none;opacity:1;transform:none}
   .scroll-hint i{animation:none}
 }
+
+/* brand logo images */
+.brand-logo{height:52px;width:auto;display:block}
+header.nav.solid .brand-logo{height:46px}
+.foot-logo{height:66px}
+#intro .ilogo{width:min(80vw,440px);height:auto;display:block;opacity:0;animation:fadein .7s ease .15s forwards}
 </style>
 </head>
 <body>
 
 <!-- INTRO -->
 <div id="intro">
-  <div class="imark">C</div>
-  <div class="iname">Central Garage</div>
+  <img class="ilogo" src="img/logo.png" alt="Central Garage Otautau Ltd">
   <div class="ibar"><i></i></div>
 </div>
 
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="brand">
-      <span class="mark">C</span>
-      <span><b>Central Garage</b><small>Otautau · Southland</small></span>
-    </a>
+    <a href="#top" class="brand"><img class="brand-logo" src="img/logo.png" alt="Central Garage Otautau Ltd"></a>
     <nav class="nav-links">
       <a class="link" href="#services">Services</a>
       <a class="link" href="#about">About</a>
@@ -315,9 +318,9 @@ footer{background:#0f1114;color:#9aa0a9;padding:64px 0 30px}
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-slides" id="slides">
-    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1900&q=72')"></div>
-    <div class="slide" data-bg="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1900&q=72"></div>
-    <div class="slide" data-bg="https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?auto=format&fit=crop&w=1900&q=72"></div>
+    <div class="slide active" style="background-image:url('img/p0.jpg')"></div>
+    <div class="slide" data-bg="img/p2.jpg"></div>
+    <div class="slide" data-bg="img/p1.jpg"></div>
   </div>
   <div class="hero-overlay"></div>
   <div class="wrap hero-in">
@@ -407,7 +410,7 @@ footer{background:#0f1114;color:#9aa0a9;padding:64px 0 30px}
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media reveal">
-        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1100&q=72" alt="Mechanic working in the Central Garage workshop" loading="lazy" width="1100" height="825">
+        <img src="img/p0.jpg" alt="Mechanic working in the Central Garage workshop" loading="lazy" width="1100" height="825">
         <div class="tag"><b>Local</b><span>Otautau &amp; Aparima district</span></div>
       </div>
       <div class="about-copy reveal">
@@ -602,7 +605,7 @@ footer{background:#0f1114;color:#9aa0a9;padding:64px 0 30px}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#top" class="brand"><span class="mark">C</span><span><b>Central Garage</b><small>Otautau · Southland</small></span></a>
+        <a href="#top" class="brand"><img class="brand-logo foot-logo" src="img/logo.png" alt="Central Garage Otautau Ltd"></a>
         <p>Trusted auto repairs, WOF, servicing, tyres and engineering on Main Street, Otautau. Local hands, honest work, back on the road.</p>
         <div class="foot-social">
           <a href="https://www.facebook.com/search/top?q=Central%20Garage%20Otautau" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
